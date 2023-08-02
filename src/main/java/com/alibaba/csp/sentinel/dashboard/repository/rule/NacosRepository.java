@@ -82,7 +82,7 @@ public class NacosRepository<T extends RuleEntity> implements RuleRepository<T, 
 
     @Override
     public T findById(Long id) {
-        return ruleRepositoryAdapter.delete(id);
+        return ruleRepositoryAdapter.findById(id);
     }
 
     @Override
